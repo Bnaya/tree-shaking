@@ -33,7 +33,7 @@ If you clone this example and run `npm install && npm test` you'll see that [bun
 
 ## Wait, isn't this just dead code in your app you should delete?
 
-Nope, because I might have a different entry point, widget.js which does call `b`. Also, `a.js` might just as well be an external library, where some apps using do call `b`.
+Nope, because I might have a different entry point, widget.js which does call `b`. Also, `a.js` might just as well be an external library, where some apps do call `b`.
 
 ## Solution?
 
