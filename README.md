@@ -1,6 +1,6 @@
 # The problem with tree shaking
 
-This is a minimal demonstration of why tree shaking is not effective enough yet and in many real life use cases you should prefer having small files with specific functionality where you explicitly import only the files that you need (aka manual tree shaking)
+This is a minimal demonstration of why tree shaking is not effective enough yet and in most real life use cases you should prefer having small files with specific functionality where you explicitly import only the files that you need (aka manual tree shaking)
 
 ## Details of example
 
@@ -29,7 +29,17 @@ export function c() {
 }
 ```
 
-If you clone this example and run `npm install && npm test` you'll see that [bundle.js](bundle.js) contains the function `c` (look for "this is not supposed to be in bundle, yet it is there") even though it is not needed. This is because webpack will include any symbol that is explicitly imported, even if it is not used by any of the previously imported symbols.
+As you can see, [bundle.js](bundle.js) contains the function `c` (look for "this is not supposed to be in bundle, yet it is there") even though it is not needed. This is because webpack will include any symbol that is explicitly imported, even if it is not used by any of the previously imported symbols.
+
+## I don't believe you, you are missing something
+
+```sh
+$ git clone git@github.com:shahata/tree-shaking.git
+$ cd tree-shaking
+$ npm install
+$ npm test
+$ grep "yet it is there" bundle.js
+```
 
 ## Wait, isn't this just dead code in your app you should delete?
 
