@@ -1,6 +1,6 @@
 # The problem with tree shaking
 
-This is a minimal demonstration of why tree shaking is not effective enough yet and in most real life use cases you should prefer having small files with specific functionality where you explicitly import only the files that you need (aka manual tree shaking ®)
+This is a minimal demonstration of why tree shaking is not effective enough yet and in most real life use cases you should prefer having small files with specific functionality where you explicitly import only the files that you need (aka manual tree shaking ® :D)
 
 ## Details of example
 
