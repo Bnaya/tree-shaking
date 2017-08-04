@@ -40,6 +40,7 @@ $ npm install
 $ npm test
 $ grep "yet it is there" bundle.js
 ```
+Found a mistake? [Tell me](https://github.com/shahata/tree-shaking/issues/new).
 
 ## Wait, isn't this just dead code in your app you should delete?
 
