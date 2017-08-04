@@ -43,7 +43,7 @@ $ grep "yet it is there" bundle.js
 
 ## Wait, isn't this just dead code in your app you should delete?
 
-Nope, because I might have a different entry point, widget.js which does call `b`. Also, `a.js` might just as well be an external library, where some apps do call `b`.
+Nope, because I might have a different entry point, widget.js, which does call `b`. Also, `a.js` might just as well be an external library, where some apps do call `b`.
 
 ## Solution?
 
