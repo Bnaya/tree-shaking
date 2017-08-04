@@ -48,6 +48,6 @@ Nope, because I might have a different entry point, widget.js, which does call `
 
 ## Solution?
 
-1) Give up on tree shaking :( and move function `b` (along with the `import {c} from './c';`) to `b.js`, which will not be bundled since your entry point doesn't import it.
+1) Give up on tree shaking :'( and move function `b` (along with the `import {c} from './c';`) to `b.js`, which will not be bundled since your entry point doesn't import it.
 2) [pure-module](https://github.com/webpack/webpack/tree/feature/pure-module/examples/pure-module) is supposed to fix this for imports inside libraries, not sure if it will do the same only apps such as this, but I'm eagerly waiting for it to come out.
 
